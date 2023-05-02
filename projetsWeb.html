@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/480db9540f.js" crossorigin="anonymous"></script>
+    <title>QBUTEAU - Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <div id="logo"><a href="index.html">QBUTEAU</a></div>
+        <div id="liens">
+            <ul>
+                <li class="projetsHeader"><a href="projetsCom.html">communication</a></li>
+                <li class="projetsHeader"><a href="projetsProdAV.html">audiovisuel</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section>
+        <div id="introDomaine">
+            <h1>Mes réalisations</h1>
+            <div id="domaine"><hr>Intégration et développement Web<hr></div>
+        </div>
+
+        <div id="projets">
+            <div id="circuitlibrary">
+                <h3>Circuit Library</h3>
+                <h5>SAE 203 | Mars 2023</h5>
+                <p>Site web qui répertorie les plus grands circuits automobiles dans
+                    le monde, grâce à une base de données contenant les tables "Circuits"
+                    et "Pilotes" directement liées à la quasi-totalité des pages. Celui-ci
+                    possède une page "Catalogue" affichant l'ensemble des circuits et une
+                    page "Recherche" qui permet de retrouver quel pilote a réalisé le meilleur
+                    tour sur quel circuit. Une partie sécurisée en htaccess a également été
+                    réalisée, afin de faire la gestion du CRUD sur les deux tables. Le concept
+                    du "mobile first" faisait également parti du cahier des charges.
+                </p>
+                <div class="imgProjets">
+                    <img src="images/circuit-library.webp" alt="circuitlibrary-cata" width="31%">
+                    <img src="images/circuit-library2.webp" alt="circuitlibrary-search" width="31%">
+                    <img src="images/circuit-library1.webp" alt="circuitlibrary-crud" width="31%">
+                </div>
+                <div class="linkProjets">
+                    <a href="https://mmi22c03.sae203.ovh" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+            <hr class="separate-projets">
+            <div id="formulapedia">
+                <h3>FormulaPedia</h3>
+                <h5>SAE 105 | Janvier 2023</h5>
+                <p>Site web qui répertorie l'ensemble des championnats du monde
+                    des pilotes de la Formule 1 depuis 1950, grâce au plug-in JQuery
+                    DataTables. Celui-ci contient également une page "Galerie" dans
+                    laquelle il est possible d'y mettre des photos (sous conditions),
+                    une page "Contact" sécurisé pour tout renseignement, une page
+                    "Partenaires" en lien direct avec une autre SAE sur la gestion de
+                    projet, qui met en avant l'ensemble du groupe et le projet de chacun,
+                    ainsi qu'une page de références.
+                </p>
+                <div class="imgProjets">
+                    <img src="images/formulapedia.webp" alt="formulapedia-data" width="31%">
+                    <img src="images/formulapedia-1.webp" alt="formulapedia-data" width="31%">
+                    <img src="images/formulapedia-2.webp" alt="formulapedia-data" width="31%">
+                </div>
+                <div class="linkProjets">
+                    <a href="https://mmi22c03.sae105.ovh" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2023 - Quentin BUTEAU<br>All rights reserved
+    </footer>
+
+</body>
+</html>

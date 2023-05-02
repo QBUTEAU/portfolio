@@ -1,0 +1,429 @@
+body{
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    background-color: rgb(10, 10, 10);
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #000407; 
+}
+::-webkit-scrollbar-thumb{
+    background: #ffffff;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: grey; 
+}
+
+/* ----- HEADER ----- */
+
+header{
+    top: 0;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    background-color: black;
+    color: white;
+    border-bottom: 2px white solid;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    padding-left: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+#logo a{
+    text-decoration: none;
+    color: white;
+}
+#liens{
+    padding-right: 20px;
+}
+#liens ul{
+    list-style: none;
+}
+#liens ul li{
+    display: inline-flex;
+    padding: 0 5px;
+    font-weight: 600;
+}
+#liens ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+#liens ul li a:hover{
+    color: grey;
+}
+
+/* ----- PRESENTATION ----- */
+
+#presentation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    height: 600px;
+    padding-top: 80px;
+}
+#nom-role{
+    text-align: center;
+}
+#nom-role h1{
+    margin: 0;
+    color: white;
+    font-size: 60px;
+}
+#nom-role h6{
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: white;
+    font-family: 'Sen';
+    font-size: 16px;
+    font-weight: 100;
+}
+i{
+    margin: 20px 8px 0 8px;
+    font-size: 40px;
+    transition: 0.25s;
+}
+.fa-envelope{
+    margin-left: 14px;
+}
+#nom-role i:hover{
+    color: grey!important;
+}
+#photo{
+    cursor: pointer;
+    background-image: url(images/qbuteau-presentation.webp);
+    background-size: 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px white solid;
+    border-radius: 40px;
+    height: 340px;
+    width: 260px;
+    transition: 0.25s;
+}
+#photo:hover{
+    filter: grayscale(0.6);
+}
+
+/* ----- SECTION ----- */
+
+#a-propos{
+    margin: 0 auto;
+    padding-top: 150px;
+    width: 80%;
+}
+hr{
+    width: 80%;
+    margin-bottom: 30px;
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+p{
+    color: white;
+    font-size: 16px;
+    font-family: 'Sen';
+    line-height: 150%;
+    text-align: justify;
+}
+#a-propos a button{
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 5px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Montserrat';
+    transition: 0.25s;
+}
+#a-propos a{
+    text-decoration: none;
+}
+#a-propos a button:hover{
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+
+
+#competences, #realisations, #formations{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 150px;
+    width: 80%;
+}
+#competences p, #formations p{
+    text-align: center;
+    margin: 0 auto;
+}
+.lieuFormation{
+    font-size: 14px;
+}
+.hrFormations{
+    width: 20%;
+}
+#competences div{
+    cursor: pointer;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    border: 1px solid white;
+    border-radius: 25px;
+    color: white;
+    font-family: 'Sen';
+    transition: 0.25s;
+}
+#competences div:hover{
+    color: black;
+    background-color: white;
+}
+#competences div i{
+    font-size: 35px;
+    margin: 0 10px;
+    transition: 0.25s;
+}
+#competences > div:hover > i{
+    color: black!important;
+}
+.divSkills1, .divSkills2{
+    display: inline-block;
+}
+.domaines{
+    display: inline-block;
+    margin: 0 20px 30px 20px;
+}
+.domaines button, #siteVPS button{
+    cursor: pointer;
+    font-family: 'Sen';
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 280px;
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    transition: 0.25s;
+}
+.domaines button:hover, #siteVPS button:hover{
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+
+/* -------------------- PAGE PROJETS WEB -------------------- */
+
+#introDomaine{
+    margin: 0 auto;
+    margin-top: 80px;
+    padding-top: 200px;
+    width: 80%;
+    height: 500px;
+    color: white;
+}
+#introDomaine h1{
+    text-align: center;
+    text-transform: uppercase;
+    align-self: center;
+    font-size: 40px;
+    margin: 20px 0;
+}
+#introDomaine div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#introDomaine hr{
+    width: 30%;
+    height: 1px;
+}
+
+#projets{
+    margin: 0 auto;
+    width: 80%;
+}
+#projets p{
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 10px;
+}
+#projets i{
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.linkProjets i:hover{
+    color: grey!important;
+}
+.separate-projets{
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#formulapedia, #circuitlibrary,
+#jeuneReporter, #sae102, #insta-lemans,
+#atelierPhoto, #sae104{
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+h3{
+    font-size: 30px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+h5{
+    margin: 0;
+    margin-bottom: 20px;
+}
+.imgProjets{
+    margin: 20px 10px;
+}
+.imgProjets img{
+    border: 2px white solid;
+}
+.articlesUNSS{
+    display: inline-block;
+    margin: 0 20px;
+}
+.divProjets{
+    margin-top: 30px;
+}
+.articlesUNSS button{
+    cursor: pointer;
+    padding: 10px 6px;
+    width: 250px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Sen';
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    transition: 0.25s;
+}
+.articlesUNSS button:hover{
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+#jeuneReporter .imgProjets{
+    margin: 0;
+    transform: rotate(-90deg);
+}
+#artur{
+    text-align: center;
+    margin-top: -6px;
+}
+#artur p{
+    line-height: 0;
+}
+#artur a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    transition: 0.25s;
+}
+#artur a:hover{
+    background-color: red;
+}
+
+/* -------------------- FOOTER -------------------- */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 180px;
+    color: white;
+    font-family: 'Sen';
+    font-weight: 400;
+    text-align: center;
+    background-color: black;
+    border-top: 3px white solid;
+}
+
+
+/* -------------------- MOBILE -------------------- */
+
+
+@media screen and (max-width:800px){
+    #liens ul li{
+        display: block;
+        font-size: 12.5px;
+    }
+    #presentation{
+        height: 450px;
+        padding-top: 150px;
+    }
+    h3{
+        text-underline-offset: 7px;
+    }
+    .domaines button, #siteVPS button{
+        margin-bottom: 10px;
+        font-size: 13px;
+        width: 250px;
+    }
+    #photo{
+        display: none;
+    }
+    #a-propos, #competences, #projets{
+        padding-top: 150px;
+    }
+    #a-propos p, #competences p{
+        font-size: 15px;
+    }
+    #introDomaine{
+        padding-top: 150px;
+        height: 250px;
+    }
+    #introDomaine h1{
+        font-size: 30px;
+    }
+    .imgProjets img{
+        width: 80%;
+        margin: 6px 0;
+    }
+    .linkProjets{
+        margin-top: 30px;
+    }
+    .articlesUNSS button{
+        margin-bottom: 10px;
+    }
+    #ligneEdito{
+        height: 300px;
+        width: 80%;
+    }
+    #calendrierEdito{
+        height: 200px;
+        width: 80%;
+    }
+    #formations p{
+        font-size: 16px;
+    }
+    #formations .lieuFormation{
+        font-size: 12px;
+    }
+    #competences div{
+        width: 240px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+}
